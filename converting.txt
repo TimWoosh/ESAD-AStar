@@ -1,0 +1,4 @@
+class Vertex
+class Edges
+class Path?
+inline function anyToString (general function file?)
