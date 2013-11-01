@@ -1,4 +1,7 @@
 // This version contains a bug and therefore finds wrong paths...
+// Edits by:
+// -David Vink
+// -Tim Wöstemeier
 #include <iostream>
 #include <set>
 #include <map>
