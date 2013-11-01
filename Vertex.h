@@ -40,7 +40,7 @@ class Vertex {
 		 * @param aVertex
 		 * @return
 		 */
-		Vertex& Vertex::operator =(const Vertex& aVertex);
+		Vertex& operator =(const Vertex& aVertex);
 		/**
 		 *
 		 * @param aVertex
