@@ -10,6 +10,7 @@
 #include <cmath>
 #include <stdexcept>
 #include <sstream>
+#include <typeinfo>
 
 /**
  * This template requires an implemented std::ostream& operator<<(std::ostream& os,const T& t)

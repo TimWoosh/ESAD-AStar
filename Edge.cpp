@@ -6,6 +6,7 @@
  */
 
 #include <iostream>
+#include <stdexcept>
 #include "Edge.h"
 #include "Vertex.h"
 

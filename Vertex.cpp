@@ -6,6 +6,9 @@
  */
 
 #include <iostream>
+#include <sstream>
+#include <stdexcept>
+#include <typeinfo>
 #include "Vertex.h"
 
 Vertex::Vertex()
@@ -31,10 +34,21 @@ Vertex::~Vertex()
 	std::cout << "Destructing Vertex " << this->getId() << std::endl;
 }
 
-std::string Vertex::getId() const
+template<typename T>
+inline std::string anyToString(const T& x)
 {
-	return anyToString(this->x) + "-" + anyToString(y);
+	std::ostringstream o;
+	if (!(o << x))
+	{
+		throw std::invalid_argument(std::string("anyToString(") + typeid(x).name() + ")");
+	}
+	return o.str();
 }
+
+//std::string Vertex::getId() const
+//{
+//	return anyToString(this->x) + "-" + anyToString(y);
+//}
 
 Vertex& Vertex::operator =(const Vertex& aVertex)
 {
